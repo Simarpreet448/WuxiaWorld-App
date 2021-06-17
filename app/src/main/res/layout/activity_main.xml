@@ -135,12 +135,13 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/ishellsealtheheaven">
+                    android:src="@raw/ishellsealtheheaven"
+                    android:background="#5c5cb2">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A Will Ethernal"
+                    android:text="I shell seal the Heaven"
                     android:textColor="@color/black"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"></TextView>
@@ -160,12 +161,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/renegateimmortal">
+                    android:src="@raw/sagemonarch">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Renegate Immortal"
+                    android:text="Sage Monarch"
                     android:textColor="@color/black"
                     android:gravity="center"></TextView>
             </LinearLayout>
@@ -177,12 +178,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/awillethernal">
+                    android:src="@raw/geniusdetective">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A Will Ethernal"
+                    android:text="Genius Detective"
                     android:textColor="@color/black"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"></TextView>
@@ -200,7 +201,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A Will Ethernal"
+                    android:text="Sovereign of three realms"
                     android:textColor="@color/black"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"></TextView>
