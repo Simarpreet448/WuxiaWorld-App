@@ -3,15 +3,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <ImageButton
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@raw/awillethernal">
-    </ImageButton>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@raw/awillethernal">
-    </ImageButton>
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:src="@raw/renegateimmortal">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renegate Immortal"
+                android:textColor="@color/black"
+                android:gravity="center"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:src="@raw/awillethernal">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Will Ethernal"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:src="@raw/ishellsealtheheaven"
+                android:background="#5c5cb2">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I shell seal the Heaven"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
