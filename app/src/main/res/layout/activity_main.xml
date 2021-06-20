@@ -27,14 +27,15 @@
         android:layout_marginRight="20dp"
         app:cardBackgroundColor="#707070">
       <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="Wuxia (Martial Heroes)"
             android:padding="10dp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="onClickWuxia">
         </TextView>
     </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -45,7 +46,8 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/xianxia"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Xianxia (Immortal Heroes)"
@@ -63,7 +65,8 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/xuanhuan"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Xuanhuan (Mysterious Fantasy)"
