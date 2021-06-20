@@ -34,7 +34,8 @@
             android:padding="10dp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="onClickWuxia">
         </TextView>
     </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -45,6 +46,7 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
+                android:id="@+id/xianxia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
@@ -63,6 +65,7 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
+                android:id="@+id/xuanhuan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
