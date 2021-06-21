@@ -8,9 +8,15 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.finalproject.WebNovelJavaFile.WebNovel;
+
+import java.util.ArrayList;
+
 public class SecondActivity extends AppCompatActivity
 {
     private String Genre;
+    ArrayList<WebNovel> webnovels = new ArrayList<WebNovel>();
+
     String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
             "WebOS","Ubuntu","Windows7","Max OS X"};
     @Override
