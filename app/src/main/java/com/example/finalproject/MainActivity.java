@@ -16,10 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void onClickWuxia(View view) {
-        Intent categoryListActivity = new Intent(this, SecondActivity.class);
+    public void onClickWuxia(View view) {
+        Intent categoryListActivity = new Intent(MainActivity.this, SecondActivity.class);
         categoryListActivity.putExtra("Genre", "Wuxia (Martial Heroes)");
-        startActivity(categoryListActivity, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(categoryListActivity);
     }
 }
