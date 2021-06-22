@@ -4,18 +4,30 @@ public class WebNovel {
     private String name;
     private String desciption;
     private int image;
+    private int genre;
 
-    public WebNovel(String name, String desciption, int image) {
+    public WebNovel(String name, String desciption, int image, int genre) {
         this.name = name;
         this.desciption = desciption;
         this.image = image;
+        this.genre = genre;
     }
 
-    public String getName() {
+    public int getGenre() {
+        return genre;
+    }
+
+    public void setGenre(int genre) {
+        this.genre = genre;
+    }
+
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
@@ -34,4 +46,6 @@ public class WebNovel {
     public void setImage(int image) {
         this.image = image;
     }
+
+
 }

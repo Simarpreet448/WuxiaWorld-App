@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/text1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/novelimage"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:src="@raw/awillethernal">
+        </ImageView>
+        <TextView
+            android:id="@+id/novelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Will Ethernal"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+</LinearLayout>
