@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Genre"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:padding="10dp"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
@@ -27,15 +27,16 @@
         android:layout_marginRight="20dp"
         app:cardBackgroundColor="#707070">
         <TextView
+            android:id="@+id/wuxiatextview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Wuxia (Martial Heroes)"
             android:padding="10dp"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
-            android:onClick="onClickWuxia">
+            android:onClick="onClickText">
         </TextView>
     </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -46,16 +47,16 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
-                android:id="@+id/xianxia"
+                android:id="@+id/xianxiatextview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="Xianxia (Immortal Heroes)"
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:onClick="onClickWuxia">
+                android:onClick="onClickText">
             </TextView>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -66,15 +67,16 @@
             android:layout_marginRight="20dp"
             app:cardBackgroundColor="#707070">
             <TextView
-                android:id="@+id/xuanhuan"
+                android:id="@+id/xuanhuantextview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="Xuanhuan (Mysterious Fantasy)"
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:gravity="center">
+                android:gravity="center"
+                android:onClick="onClickText">
             </TextView>
         </androidx.cardview.widget.CardView>
         <LinearLayout
