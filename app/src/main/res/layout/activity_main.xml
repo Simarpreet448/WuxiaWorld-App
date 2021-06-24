@@ -19,69 +19,54 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp">
     </TextView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        app:cardBackgroundColor="#707070">
-        <TextView
+    <Button
             android:id="@+id/wuxiatextview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#707070"
             android:text="Wuxia (Martial Heroes)"
-            android:padding="10dp"
+            android:padding="15dp"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
             android:onClick="onClickText"
             >
-        </TextView>
-    </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
+        </Button>
+        <Button
+            android:id="@+id/xianxiatextview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#707070">
-            <TextView
-                android:id="@+id/xianxiatextview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Xianxia (Immortal Heroes)"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:onClick="onClickText"
-                >
-            </TextView>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
+            android:backgroundTint="#707070"
+            android:text="Xianxia (Immortal Heroes)"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onClickText"
+            >
+        </Button>
+        <Button
+            android:id="@+id/xuanhuantextview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#707070">
-            <TextView
-                android:id="@+id/xuanhuantextview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Xuanhuan (Mysterious Fantasy)"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:onClick="onClickText"
-                >
-            </TextView>
-        </androidx.cardview.widget.CardView>
+            android:backgroundTint="#707070"
+            android:text="Xuanhuan (Mysterious Fantasy)"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onClickText"
+            >
+        </Button>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

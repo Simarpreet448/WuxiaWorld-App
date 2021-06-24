@@ -13,6 +13,8 @@
             android:id="@+id/novelimage"
             android:layout_width="100dp"
             android:layout_height="135dp"
+            android:background="#5c5cb2"
+            android:scaleType="centerCrop"
             android:src="@raw/awillethernal">
         </ImageView>
         <TextView
