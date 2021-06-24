@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/custom_background">
+    <TextView
+        android:id="@+id/novelnamedescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Renegade Immortal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        ></TextView>
+    <ImageView
+        android:id="@+id/novelimagedescription"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="#5c5cb2"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@raw/awillethernal">
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Synopsis"></TextView>
+    <TextView
+        android:id="@+id/descriptiontextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10sp"
+        android:textSize="17sp"
+        android:text="Some description about the novel"
+        >
+    </TextView>
+
+</LinearLayout>
+
+</ScrollView>

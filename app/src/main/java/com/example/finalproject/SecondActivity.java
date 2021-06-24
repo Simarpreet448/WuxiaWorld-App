@@ -2,6 +2,8 @@ package com.example.finalproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import androidx.annotation.StringRes;
@@ -71,6 +73,18 @@ public  class SecondActivity extends AppCompatActivity {
         GridView gridView = findViewById(R.id.gridview);
         CustomAdaptor customAdapter = new CustomAdaptor(this, R.layout.webnovellistitem, itemsList);
         gridView.setAdapter(customAdapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                WebNovel item = itemsList.get(position);
+                Intent intent = new Intent(getBaseContext(), ThirdActivity.class);
+                intent.putExtra("name",item.getName());
+                intent.putExtra("image",item.getImage());
+                intent.putExtra("info", item.getDesciption());
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
