@@ -39,6 +39,84 @@
             android:src="@raw/awillethernal">
         </ImageView>
     </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinese"
+                android:padding="7dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:padding="7dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                ></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/genretextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genre"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="7dp"
+            android:background="@drawable/round_corner"
+            android:textColor="@color/white"
+            ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Notmuch">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#747474"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@raw/rect44345"
+                android:layout_gravity="center_vertical">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Reading"
+                android:layout_margin="7dp"
+                android:layout_gravity="center_vertical"
+                android:padding="7dp"
+                android:textColor="@color/white"
+                ></TextView>
+        </LinearLayout>
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

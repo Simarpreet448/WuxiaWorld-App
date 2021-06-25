@@ -81,6 +81,7 @@ public  class SecondActivity extends AppCompatActivity {
                 intent.putExtra("name",item.getName());
                 intent.putExtra("image",item.getImage());
                 intent.putExtra("info", item.getDesciption());
+                intent.putExtra("genre", item.getGenre());
                 startActivity(intent);
             }
         });
