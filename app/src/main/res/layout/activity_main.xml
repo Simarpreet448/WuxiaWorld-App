@@ -92,9 +92,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
+                    android:id="@+id/renegateimmortalimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/renegateimmortal">
+                    android:src="@raw/renegateimmortal"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,9 +111,11 @@
                 android:orientation="vertical"
                 android:layout_centerHorizontal="true">
                 <ImageView
+                    android:id="@+id/awillethernalimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/awillethernal">
+                    android:src="@raw/awillethernal"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -127,10 +131,12 @@
                 android:orientation="vertical"
                 android:layout_alignParentRight="true">
                 <ImageView
+                    android:id="@+id/ishellsealtheheavenimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
                     android:src="@raw/ishellsealtheheaven"
-                    android:background="#5c5cb2">
+                    android:background="#5c5cb2"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,9 +159,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
+                    android:id="@+id/sagemonarchimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/sagemonarch">
+                    android:src="@raw/sagemonarch"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,9 +178,11 @@
                 android:orientation="vertical"
                 android:layout_centerHorizontal="true">
                 <ImageView
+                    android:id="@+id/geniusdetectiveimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/geniusdetective">
+                    android:src="@raw/geniusdetective"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -188,9 +198,11 @@
                 android:orientation="vertical"
                 android:layout_alignParentRight="true">
                 <ImageView
+                    android:id="@+id/sovereignofthreerealmsimage"
                     android:layout_width="100dp"
                     android:layout_height="135dp"
-                    android:src="@raw/sagemonarch">
+                    android:src="@raw/sovereignofthethreerealms"
+                    android:onClick="onClickImage">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
