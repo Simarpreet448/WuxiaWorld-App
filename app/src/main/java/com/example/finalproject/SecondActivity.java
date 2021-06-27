@@ -2,11 +2,14 @@ package com.example.finalproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.finalproject.WebNovelJavaFile.WebNovel;
@@ -22,6 +25,9 @@ public  class SecondActivity extends AppCompatActivity {
         {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         List<WebNovel> itemsList = new ArrayList<>();
         Intent intent = getIntent();
@@ -86,6 +92,15 @@ public  class SecondActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
