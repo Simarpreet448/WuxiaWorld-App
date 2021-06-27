@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
@@ -88,6 +90,7 @@ public  class SecondActivity extends AppCompatActivity {
                 intent.putExtra("image",item.getImage());
                 intent.putExtra("info", item.getDesciption());
                 intent.putExtra("genre", item.getGenre());
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
                 startActivity(intent);
             }
         });
@@ -97,6 +100,7 @@ public  class SecondActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
                 this.finish();
                 return true;
         }

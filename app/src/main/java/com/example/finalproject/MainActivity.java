@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         progress = new ProgressDialog(MainActivity.this);
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
         setContentView(R.layout.activity_main);
     }
 

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,6 +22,7 @@ public class CustomAdaptor extends ArrayAdapter<WebNovel>
 {
     List<WebNovel> items_list = new ArrayList<>();
     int custom_layout_id;
+    Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
 
     public CustomAdaptor(@NonNull Context context, int resource, @NonNull List<WebNovel> novels) {
         super(context, resource, novels);
@@ -52,6 +55,7 @@ public class CustomAdaptor extends ArrayAdapter<WebNovel>
         // get the item using the  position param
         WebNovel item = items_list.get(position);
         imageView.setImageResource(item.getImage());
+        imageView.startAnimation(animation);
         textView.setText(item.getName());
         return view;
     }

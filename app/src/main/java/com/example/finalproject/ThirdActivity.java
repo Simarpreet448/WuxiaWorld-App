@@ -69,6 +69,7 @@ public class ThirdActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
                 this.finish();
                 return true;
         }
